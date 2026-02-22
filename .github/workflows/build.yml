@@ -1,0 +1,33 @@
+name: Budowanie pliku EXE
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch: # Pozwala uruchomić ręcznie przyciskiem
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - name: Pobieranie kodu z repozytorium
+      uses: actions/checkout@v4
+
+    - name: Instalacja Pythona
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.9'
+
+    - name: Instalacja potrzebnych bibliotek
+      run: |
+        pip install pyautogui pynput pyinstaller
+
+    - name: Tworzenie pliku EXE
+      run: |
+        pyinstaller --onefile farmWindows.py
+
+    - name: Udostępnienie gotowego bota
+      uses: actions/upload-artifact@v4
+      with:
+        name: Bot-Minecraft-Windows
+        path: dist/farmWindows.exe
