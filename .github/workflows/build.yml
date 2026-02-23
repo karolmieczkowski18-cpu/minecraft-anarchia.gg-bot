@@ -3,7 +3,7 @@ name: Budowanie pliku EXE
 on:
   push:
     branches: [ "main" ]
-  workflow_dispatch: # Pozwala uruchomić ręcznie przyciskiem
+  workflow_dispatch: 
 
 jobs:
   build:
@@ -20,7 +20,7 @@ jobs:
 
     - name: Instalacja potrzebnych bibliotek
       run: |
-        pip install pyautogui pynput pyinstaller
+        pip install pyautogui pynput pyinstaller pydirectinput
 
     - name: Tworzenie pliku EXE
       run: |
