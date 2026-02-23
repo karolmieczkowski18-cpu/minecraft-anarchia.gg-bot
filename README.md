@@ -1,7 +1,7 @@
-# minecraft-auto-farm-bot
+# 🤖 Minecraft AFK Farm Bot (v1.1)
 
-Simple Python script to automate attacking and tool switching in Minecraft.
-Prosty skrypt do automatyzacji bicia i zmiany narzędzi w Minecraft.
+Simple Python script to automate attacking, eating, and anti-AFK actions.
+Prosty skrypt do automatyzacji bicia, jedzenia i zapobiegania wyrzuceniu z serwera.
 
 ---
 
@@ -9,15 +9,17 @@ Prosty skrypt do automatyzacji bicia i zmiany narzędzi w Minecraft.
 
 ### Features
 * **Auto-Clicker:** Attacks every 5.09 - 6.10 seconds (randomized).
-* **Auto-Slot:** Switches hotbar slots (1-9) every 6000 hits.
-* **Emergency Stop:** Press ENTER to stop.
-* **Failsafe:** Flick mouse to top-left corner to kill the script.
+* **Auto-Eat:** Automatically switches to **Slot 9** every 60 minutes to eat.
+* **Anti-AFK Jump:** Jumps every 2 minutes to stay active on the server.
+* **Auto-Slot:** Cycles weapons (Slots 1-8) every 6000 hits to prevent breakage.
+* **Emergency Stop:** Press **ENTER** in the console to stop.
+* **Failsafe:** Flick mouse to **top-left corner** to kill the script instantly.
 
 ### How to use
-1. Download farmWindows.exe from the Actions tab.
-2. Open Minecraft and aim at your farm.
-3. Run the .exe as Administrator.
-4. Press F3 + P in-game (disables pause on alt-tab).
+1. **Prepare:** Put your food in **Slot 9** and weapons in slots 1-8.
+2. **Download:** Get `farmWindows.exe` from the **Releases** or **Actions** tab.
+3. **Run:** Open Minecraft, aim at your farm, and run the `.exe` as **Administrator**.
+4. **Settings:** Press `F3 + P` in-game (to disable pause on alt-tab).
 
 ---
 
@@ -25,18 +27,20 @@ Prosty skrypt do automatyzacji bicia i zmiany narzędzi w Minecraft.
 
 ### Funkcje
 * **Auto-Clicker:** Bije co 5.09 - 6.10 sekundy (czas jest losowy).
-* **Auto-Slot:** Zmienia slot (1-9) co 6000 uderzeń (żeby nie zniszczyć miecza).
-* **Stop:** Naciśnij ENTER, żeby wyłączyć.
-* **Ratunek:** Szybki ruch myszką w lewy górny róg ekranu wyłącza bota.
+* **Auto-Jedzenie:** Co 60 minut automatycznie wybiera **Slot 9** i je.
+* **Anty-AFK:** Skacze co 2 minuty, aby zapobiec wyrzuceniu z serwera za bezczynność.
+* **Auto-Slot:** Zmienia miecze (Sloty 1-8) co 6000 uderzeń.
+* **Stop:** Naciśnij **ENTER** w oknie bota, żeby go wyłączyć.
+* **Ratunek:** Szybki ruch myszką w **lewy górny róg** ekranu wyłącza bota.
 
 ### Jak używać
-1. Pobierz farmWindows.exe z zakładki Actions (Działania).
-2. Odpal Minecrafta i wyceluj w farmę.
-3. Uruchom pobrany plik jako Administrator.
-4. Kliknij w grze F3 + P (żeby gra nie stopowała po wyjściu do pulpitu).
+1. **Przygotowanie:** Umieść jedzenie na **9 slocie**, a miecze na slotach 1-8.
+2. **Pobieranie:** Pobierz `farmWindows.exe` z zakładki **Releases** lub **Actions**.
+3. **Uruchomienie:** Odpal Minecrafta, wyceluj w farmę i uruchom plik jako **Administrator**.
+4. **Ustawienia:** Kliknij w grze `F3 + P` (żeby gra nie stopowała po wyjściu do pulpitu).
 
 ---
 
 ### ⚙️ Important / Ważne
-Go to .minecraft/options.txt and set pauseOnLostFocus:false.
-Wejdź do .minecraft/options.txt i ustaw pauseOnLostFocus:false.
+Go to `.minecraft/options.txt` and set `pauseOnLostFocus:false`.
+Wejdź do `.minecraft/options.txt` i ustaw `pauseOnLostFocus:false`.
